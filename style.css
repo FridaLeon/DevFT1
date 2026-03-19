@@ -140,6 +140,12 @@ h2 {
     margin-top: 1rem;
 }
 
+.plataforma-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
 .pelicula, .genero {
     background-color: #2c2c2c;
     padding: 1rem;
