@@ -8,17 +8,60 @@ body {
 }
 
 header {
-    background-color: #2c2c2c;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    transition: background-color 0.3s ease;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #ff6b6b;
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.hamburger span {
+    width: 20px;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+#nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.9);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#nav-menu a:hover {
+    background-color: #ff6b6b;
+}
+
+#nav-menu.open {
+    display: flex;
 }
 
 nav {
@@ -51,6 +94,37 @@ section {
 
 #hero {
     text-align: center;
+    position: relative;
+    background: url('img/cine2.jpg') center/cover no-repeat;
+    color: white;
+    padding: 3rem 2rem;
+    height: 400px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease;
+}
+
+#hero:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#hero h1, #hero h2, #hero p {
+    position: relative;
+    z-index: 1;
 }
 
 h2 {

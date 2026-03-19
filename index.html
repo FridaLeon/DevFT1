@@ -8,8 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>CineMundo</h1>
-        <nav>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
             <a href="#" onclick="showSection('inicio')">Inicio</a>
             <a href="#" onclick="showSection('peliculas')">Películas</a>
         </nav>
@@ -18,9 +22,9 @@
     <main>
         <section id="inicio" class="section">
             <div id="hero">
+                <h1>CineMundo</h1>
                 <h2>Descubre el Mundo del Cine</h2>
                 <p>Explora las mejores películas, reseñas y recomendaciones.</p>
-                <img src="img/cine2.jpg" alt="Cine" style="width:100%;">
             </div>
 
             <div id="destacadas">
@@ -184,7 +188,14 @@
             const sections = document.querySelectorAll('.section');
             sections.forEach(sec => sec.style.display = 'none');
             document.getElementById(sectionId).style.display = 'block';
+            // Close menu after navigation
+            document.getElementById('nav-menu').classList.remove('open');
         }
+
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.toggle('open');
+        });
 
         // For generos sub-sections
         document.querySelectorAll('.genero').forEach(link => {
