@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineMundo - Tu Portal de Películas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,6 +27,25 @@
                 <h1>CineMundo</h1>
                 <h2>Descubre el Mundo del Cine</h2>
                 <p>Explora las mejores películas, reseñas y recomendaciones.</p>
+            </div>
+
+            <div class="introFilm">
+                <div class="cine-title">🎬 Bienvenido al Cine</div>
+                <div class="divider"></div>
+
+                <div class="cine-text">
+                    <p>El cine es un lugar donde las historias cobran vida, donde los mundos imposibles se vuelven reales y donde cada emoción encuentra su pantalla.</p>
+
+                    <p>Esta página nace del amor profundo por ese arte que nos acompaña, nos sorprende y, a veces, incluso nos transforma.</p>
+
+                    <p>Aquí podrás descubrir los estrenos más esperados, redescubrir clásicos que marcaron generaciones y encontrar recomendaciones claras y honestas para saber qué ver y dónde verlo.</p>
+
+                    <p>Nuestro objetivo es guiarte entre géneros, épocas y estilos, para que siempre tengas una película perfecta para cada momento.</p>
+
+                    <p>Si disfrutas perderte en una buena historia, debatir sobre directores, emocionarte con una banda sonora o simplemente buscar algo nuevo para ver, este es tu lugar.</p>
+
+                    <p class="final">Bienvenido a un espacio hecho por y para quienes aman el cine.</p>
+                </div>
             </div>
 
             <div id="destacadas">
@@ -68,117 +88,56 @@
         </section>
 
         <section id="peliculas" class="section" style="display:none;">
-            <h2>Géneros</h2>
-            <div class="genero-grid">
-                <a href="#accion" class="genero">
-                    <img src="img/accion.jpg" alt="Acción">
-                    <h3>Acción</h3>
-                </a>
-                <a href="#drama" class="genero">
-                    <img src="img/drama.jpg" alt="Drama">
-                    <h3>Drama</h3>
-                </a>
-                <a href="#comedia" class="genero">
-                    <img src="img/comedia.jpg" alt="Comedia">
-                    <h3>Comedia</h3>
-                </a>
+            <div class="titulo-cine">
+                <h1>PELÍCULAS</h1>
             </div>
-            <h2>Catálogo de Películas</h2>
-            <div id="accion" class="sub-section" style="display:none;">
-                <h3>Acción</h3>
-                <p>Películas llenas de adrenalina y emoción.</p>
-                <div class="pelicula-grid">
-                    <div class="pelicula">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Avengers: Endgame">
-                        <h3>Avengers: Endgame</h3>
-                        <a href="https://www.imdb.com/title/tt4154796/" target="_blank">Ver en IMDb</a>
-                    </div>
-                    <div class="pelicula">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" alt="The Matrix">
-                        <h3>The Matrix</h3>
-                        <a href="https://www.imdb.com/title/tt0133093/" target="_blank">Ver en IMDb</a>
-                    </div>
-                </div>
-            </div>
+            <div class="cinefilm-container">
+                <div class="film-strip">
+                    <!-- Copia 1 -->
+                    <img src="https://www.impactpostersgallery.com/product_images/uploaded_images/jaws-movie-poster.jpg">
+                    <img src="https://speakinghuman.com/wp-content/uploads/Star-Wars-Movie-Poster.jpeg.webp">
+                    <img src="https://cdn.mos.cms.futurecdn.net/6tQZZeFggto6iuGd9VWBPK-970-80.jpg.webp">
+                    <img src="https://speakinghuman.com/wp-content/uploads/Alien-1979-Movie-Poster-1707x2560.jpg.webp">
+                    <img src="https://cdn.mos.cms.futurecdn.net/7SfznToW65UX8QdS65Jn5d-970-80.jpg.webp">
 
-            <div id="drama" class="sub-section" style="display:none;">
-                <h3>Drama</h3>
-                <p>Historias profundas y emotivas.</p>
-                <div class="pelicula-grid">
-                    <div class="pelicula">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="The Shawshank Redemption">
-                        <h3>The Shawshank Redemption</h3>
-                        <a href="https://www.imdb.com/title/tt0111161/" target="_blank">Ver en IMDb</a>
-                    </div>
-                    <div class="pelicula">
-                        <img src="img/ForrestGump.jpg" alt="Forrest Gump">
-                        <h3>Forrest Gump</h3>
-                        <a href="https://www.imdb.com/title/tt0109830/" target="_blank">Ver en IMDb</a>
-                    </div>
-                </div>
-            </div>
+                    <!-- Copia 2 -->
+                    <img src="https://speakinghuman.com/wp-content/uploads/Back-to-the-Future-Movie-Poster.jpg.webp">
+                    <img src="https://speakinghuman.com/wp-content/uploads/The-Terminator-Movie-Poster.jpg.webp">
+                    <img src="https://speakinghuman.com/wp-content/uploads/The-Usual-Suspects-Lineup-Poster.jpg.webp">
+                    <img src="https://penji.co/wp-content/uploads/2023/01/Untitled-design-59-768x1024.jpg.webp">
+                    <img src="https://penji.co/wp-content/uploads/2019/09/A_Clockwork_Orange-iconic-movie-posters.jpg">
 
-            <div id="comedia" class="sub-section" style="display:none;">
-                <h3>Comedia</h3>
-                <p>Risas garantizadas.</p>
-                <div class="pelicula-grid">
-                    <div class="pelicula">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="Pulp Fiction">
-                        <h3>Pulp Fiction</h3>
-                        <a href="https://www.imdb.com/title/tt0110912/" target="_blank">Ver en IMDb</a>
-                    </div>
-                    <div class="pelicula">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX300.jpg" alt="Inglourious Basterds">
-                        <h3>Inglourious Basterds</h3>
-                        <a href="https://www.imdb.com/title/tt0361748/" target="_blank">Ver en IMDb</a>
-                    </div>
-                </div>
-            </div>
+                    <!-- Copia  -->
+                    <img src="https://penji.co/wp-content/uploads/2019/09/The_Matrix-iconic-movie-posters.jpg">
+                    <img src="https://penji.co/wp-content/uploads/2019/09/Amelie-iconic-movie-posters.jpg">
+                    <img src="https://penji.co/wp-content/uploads/2019/09/Pulp_Fiction-iconic-movie-posters.jpgp">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-34.jpg">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-1.png">
 
-            <h3>Todas las Películas</h3>
-            <div class="pelicula-grid">
-                <div class="pelicula">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Avengers: Endgame">
-                    <h3>Avengers: Endgame</h3>
-                    <p>El final de la saga de los Vengadores.</p>
-                    <a href="https://www.imdb.com/title/tt4154796/" target="_blank"><button>Ver en IMDb</button></a>
-                </div>
-                <div class="pelicula">
-                    <img src="img/ForrestGump.jpg" alt="Forrest Gump">
-                    <h3>Forrest Gump</h3>
-                    <p>La vida extraordinaria de un hombre ordinario.</p>
-                    <a href="https://www.imdb.com/title/tt0109830/" target="_blank"><button>Ver en IMDb</button></a>
-                </div>
-                <div class="pelicula">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" alt="The Matrix">
-                    <h3>The Matrix</h3>
-                    <p>¿Qué es la realidad?</p>
-                    <a href="https://www.imdb.com/title/tt0133093/" target="_blank"><button>Ver en IMDb</button></a>
-                </div>
-                <div class="pelicula">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight">
-                    <h3>The Dark Knight</h3>
-                    <p>Batman enfrenta al Joker.</p>
-                    <a href="https://www.imdb.com/title/tt0468569/" target="_blank"><button>Ver en IMDb</button></a>
-                </div>
-                <div class="pelicula">
-                    <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="Interstellar">
-                    <h3>Interstellar</h3>
-                    <p>Un viaje a través del espacio y el tiempo.</p>
-                    <a href="https://www.imdb.com/title/tt0816692/" target="_blank"><button>Ver en IMDb</button></a>
-                </div>
-                <div class="pelicula">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX300.jpg" alt="Inglourious Basterds">
-                    <h3>Inglourious Basterds</h3>
-                    <p>La venganza de los bastardos.</p>
-                    <a href="https://www.imdb.com/title/tt0361748/" target="_blank"><button>Ver en IMDb</button></a>
+                    <!-- Copia 4 -->
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-32.jpg">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-28.jpg">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-26.jpg">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-11.jpg">
+                    <img src="https://www.boredart.com/wp-content/uploads/2015/01/famous-movie-posters-of-All-time-Hollywood-7.jpg">
                 </div>
             </div>
+        <section class="movie-section">
+            <h2>🎬 Movies en Streaming</h2>
+
+            <div id="movieContainer" class="movie-grid"></div>
         </section>
 
-        <section id="plataformas" class="section">
+        <script src="script.js"></script>
+
+    <script src="app.js"></script>
+
+        </section>
+
+        <section id="plataformas" class="section" style="display:none;">
             <div id="destacadas">
                 <h2>Plataformas de streaming</h2>
+                <h3>Encuentra dónde ver tus películas y series favoritas. Cada plataforma ofrece un catálogo distinto: desde estrenos y clásicos hasta contenido exclusivo. Explora las opciones y elige la que mejor se adapte a lo que quieres ver.</h3>
                 <div class="plataforma-grid">
                     <div class="pelicula">
                         <img src="https://logodix.com/logo/2209501.jpg" alt="Netflix">
@@ -218,6 +177,13 @@
                     </div>
                 </div>
             </div>
+           <div class="scene">
+            <div class="camera-3d">
+                <div class="body"></div>
+                <div class="lens"></div>
+                <div class="top"></div>
+            </div>
+        </div>
         </section>
 
 
